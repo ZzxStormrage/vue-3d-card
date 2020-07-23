@@ -1,7 +1,7 @@
 <!--
  * @Author: zzx
  * @Date: 2020-05-27 15:36:52
- * @LastEditTime: 2020-07-23 19:24:09
+ * @LastEditTime: 2020-07-23 19:30:18
  * @FilePath: /vue-3d-card/packages/card/src/main.vue
 --> 
 <template>
@@ -16,7 +16,7 @@
       @mouseover="over"
     >
       <div class="reflection" ref="refl"></div>
-    123
+    <slot></slot>
     </a>
   </div>
 </template>
@@ -47,9 +47,9 @@ export default {
 
       const relX = (event.offsetX + 1) / card.offsetWidth;
       const relY = (event.offsetY + 1) / card.offsetHeight;
-      const rotY = `rotateY(${(relX - 0.5) * 60}deg)`;
-      const rotX = `rotateX(${(relY - 0.5) * -60}deg)`;
-      card.style.transform = `perspective(500px) scale(2) ${rotY} ${rotX}`;
+      const rotY = `rotateY(${(relX - 0.5) * 13}deg)`;
+      const rotX = `rotateX(${(relY - 0.5) * -13}deg)`;
+      card.style.transform = `perspective(500px) scale(1.1) ${rotY} ${rotX}`;
 
       const lightX = this.scale(relX, 0, 1, 150, -50);
       const lightY = this.scale(relY, 0, 1, 30, -100);
