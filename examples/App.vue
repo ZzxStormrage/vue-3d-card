@@ -1,12 +1,12 @@
 <!--
  * @Author: zzx
  * @Date: 2020-05-27 15:36:52
- * @LastEditTime: 2020-07-23 19:19:30
+ * @LastEditTime: 2020-07-28 15:11:43
  * @FilePath: /vue-3d-card/examples/App.vue
 --> 
 <template>
   <div id="app">
-    <h1>测试alert</h1>
+    <h1>测试</h1>
     <!-- <button @click="alertMsg()" style="margin-left: 80%">弹出消息</button> -->
     <vue3dCard />
   </div>
