@@ -1,13 +1,12 @@
 <!--
  * @Author: zzx
  * @Date: 2020-05-27 15:36:52
- * @LastEditTime: 2020-08-21 18:20:41
+ * @LastEditTime: 2020-08-21 18:29:10
  * @FilePath: /vue-3d-card/packages/card/src/main.vue
 --> 
 <template>
   <div
     class="card"
-    target="_blank"
     ref="card"
     @mousemove="move"
     @mouseleave="leave"
@@ -20,7 +19,18 @@
 
 <script>
 export default {
-  props: {},
+  props: {
+    // 角度
+    angle: {
+      type: Number,
+      default: 13
+    },
+    // hover 放大的系数
+    scaleNumber: {
+      type: Number,
+      default: 1.1
+    }
+  },
   data: () => ({
     debounce: null
   }),
@@ -44,9 +54,9 @@ export default {
 
       const relX = (event.offsetX + 1) / card.offsetWidth;
       const relY = (event.offsetY + 1) / card.offsetHeight;
-      const rotY = `rotateY(${(relX - 0.5) * 13}deg)`;
-      const rotX = `rotateX(${(relY - 0.5) * -13}deg)`;
-      card.style.transform = `perspective(500px) scale(1.1) ${rotY} ${rotX}`;
+      const rotY = `rotateY(${(relX - 0.5) * this.angle}deg)`;
+      const rotX = `rotateX(${(relY - 0.5) * - this.angle}deg)`;
+      card.style.transform = `perspective(500px) scale(${this.scaleNumber}) ${rotY} ${rotX}`;
 
       const lightX = this.scale(relX, 0, 1, 150, -50);
       const lightY = this.scale(relY, 0, 1, 30, -100);
