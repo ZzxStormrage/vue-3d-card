@@ -1,29 +1,26 @@
 <!--
  * @Author: zzx
  * @Date: 2020-05-27 15:36:52
- * @LastEditTime: 2020-07-23 19:30:18
+ * @LastEditTime: 2020-08-21 18:20:41
  * @FilePath: /vue-3d-card/packages/card/src/main.vue
 --> 
 <template>
-  <div id="grid">
-    <a
-      class="card"
-      :href="link"
-      target="_blank"
-      ref="card"
-      @mousemove="move"
-      @mouseleave="leave"
-      @mouseover="over"
-    >
-      <div class="reflection" ref="refl"></div>
+  <div
+    class="card"
+    target="_blank"
+    ref="card"
+    @mousemove="move"
+    @mouseleave="leave"
+    @mouseover="over"
+  >
+    <div class="reflection" ref="refl"></div>
     <slot></slot>
-    </a>
   </div>
 </template>
 
 <script>
 export default {
-  props: ["img", "link"],
+  props: {},
   data: () => ({
     debounce: null
   }),
@@ -60,11 +57,11 @@ export default {
       refl.style.backgroundImage = `radial-gradient(circle at ${lightX}% ${lightY}%, ${lightShade} 20%, ${lightShadeBlack})`;
     },
     scale: (val, inMin, inMax, outMin, outMax) =>
-    outMin + (val - inMin) * (outMax - outMin) / (inMax - inMin)
+      outMin + ((val - inMin) * (outMax - outMin)) / (inMax - inMin)
   }
 };
 </script>
 
 <style scoped>
-@import url('./style.css');
+@import url("./style.css");
 </style>

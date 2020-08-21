@@ -1,14 +1,16 @@
 <!--
  * @Author: zzx
  * @Date: 2020-05-27 15:36:52
- * @LastEditTime: 2020-07-28 15:11:43
+ * @LastEditTime: 2020-08-21 18:12:45
  * @FilePath: /vue-3d-card/examples/App.vue
 --> 
 <template>
   <div id="app">
     <h1>测试</h1>
     <!-- <button @click="alertMsg()" style="margin-left: 80%">弹出消息</button> -->
-    <vue3dCard />
+    <vue3dCard>
+      <img src="./WechatIMG1277.jpeg">
+    </vue3dCard>
   </div>
 </template>
 
