@@ -1,7 +1,7 @@
 <!--
  * @Author: zzx
  * @Date: 2020-05-27 15:36:52
- * @LastEditTime: 2020-08-24 10:46:19
+ * @LastEditTime: 2020-08-24 10:52:44
  * @FilePath: /vue-3d-card/packages/card/src/main.vue
 --> 
 <template>
@@ -19,6 +19,7 @@
 
 <script>
 export default {
+  name: 'vue3dCard',
   props: {
     // 角度的系数
     angle: {
