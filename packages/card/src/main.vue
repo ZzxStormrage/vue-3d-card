@@ -1,7 +1,7 @@
 <!--
  * @Author: zzx
  * @Date: 2020-05-27 15:36:52
- * @LastEditTime: 2020-08-21 18:29:10
+ * @LastEditTime: 2020-08-24 10:46:19
  * @FilePath: /vue-3d-card/packages/card/src/main.vue
 --> 
 <template>
@@ -20,7 +20,7 @@
 <script>
 export default {
   props: {
-    // 角度
+    // 角度的系数
     angle: {
       type: Number,
       default: 13
@@ -58,7 +58,7 @@ export default {
       const rotX = `rotateX(${(relY - 0.5) * - this.angle}deg)`;
       card.style.transform = `perspective(500px) scale(${this.scaleNumber}) ${rotY} ${rotX}`;
 
-      const lightX = this.scale(relX, 0, 1, 150, -50);
+      const lightX = this.scale(relX, 0, 1, card.offsetWidth, -50);
       const lightY = this.scale(relY, 0, 1, 30, -100);
       const lightConstrain = Math.min(Math.max(relY, 0.3), 0.7);
       const lightOpacity = this.scale(lightConstrain, 0.3, 1, 1, 0) * 255;

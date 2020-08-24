@@ -1,7 +1,7 @@
 <!--
  * @Author: zzx
  * @Date: 2020-05-27 15:36:52
- * @LastEditTime: 2020-08-21 18:12:45
+ * @LastEditTime: 2020-08-24 10:24:12
  * @FilePath: /vue-3d-card/examples/App.vue
 --> 
 <template>
@@ -31,5 +31,10 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  
+}
+#app .card {
+  margin: 0 auto;
+  height: 380px;
 }
 </style>
