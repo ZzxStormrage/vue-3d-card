@@ -1,14 +1,20 @@
+<!--
+ * @Author: zzx
+ * @Date: 2020-05-27 15:36:52
+ * @LastEditTime: 2020-08-24 11:25:38
+ * @FilePath: /vue-3d-card/README.md
+-->
 ## Install
 ```shell
-cnpm install vue-mimi-alert -S
+cnpm install vue-3d-card -S
 ```
 
 ## Quick Start
 ``` javascript
 import Vue from 'vue'
-import AlertMsg from 'vue-mimi-alert'
+import vue3dCard from 'vue-3d-card'
 
-Vue.use(AlertMsg)
+Vue.use(vue3dCard)
 ```
 
 
