@@ -1,6 +1,6 @@
 {
   "name": "vue-3d-card",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "keyword": "3d card",
   "author": "zzx",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:ZzxStormrage/vue-mimi-alert.git"
+    "url": "https://github.com/ZzxStormrage/vue-3d-card.git"
   },
   "dependencies": {
     "core-js": "^2.6.5",

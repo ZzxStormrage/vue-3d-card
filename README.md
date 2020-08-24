@@ -1,7 +1,7 @@
 <!--
  * @Author: zzx
  * @Date: 2020-05-27 15:36:52
- * @LastEditTime: 2020-08-24 11:25:38
+ * @LastEditTime: 2020-08-24 11:38:35
  * @FilePath: /vue-3d-card/README.md
 -->
 ## Install
@@ -20,5 +20,4 @@ Vue.use(vue3dCard)
 
 ## Use
 ``` javascript
-this.$alertMsg('See Something')
 ```
