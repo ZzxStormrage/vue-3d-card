@@ -2,7 +2,7 @@
   "name": "vue-3d-card",
   "version": "0.1.0",
   "private": false,
-  "keyword": "alert",
+  "keyword": "3d card",
   "author": "zzx",
   "license": "MIT",
   "main": "lib/vue-3dcard.umd.min.js",
@@ -11,7 +11,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "lib": "vue-cli-service build --target lib --name vue-3dcard --dest lib packages/index.js"
+    "lib": "vue-cli-service build --target lib --name vue-3dcard packages/index.js"
   },
   "repository": {
     "type": "git",
