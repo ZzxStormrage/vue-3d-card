@@ -1,7 +1,7 @@
 <!--
  * @Author: zzx
  * @Date: 2020-05-27 15:36:52
- * @LastEditTime: 2020-08-24 14:21:31
+ * @LastEditTime: 2020-08-24 18:18:29
  * @FilePath: /vue-3d-card/examples/App.vue
 --> 
 <template>
@@ -9,6 +9,7 @@
     <h1>测试</h1>
     <!-- <button @click="alertMsg()" style="margin-left: 80%">弹出消息</button> -->
     <vue3dCard>
+      <img src="./timg.jpeg">
     </vue3dCard>
   </div>
 </template>
