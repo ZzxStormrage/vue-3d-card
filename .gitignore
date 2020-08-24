@@ -3,7 +3,11 @@ node_modules
 npm-debug.log
 npm-debug.log.*
 lib
-dist
+examples/
+packages/
+public/
+vue.config.js
+babel.config.js
 .idea
 .vscode
 coverage
